@@ -1,62 +1,39 @@
 <!DOCTYPE html>
-<html>
 
+<html lang="en">
 <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<style>
- body{font-family:Arial; background:#f5f5f5; margin:0; padding:20px;}
- form{background:white; padding:20px; border-radius:12px; max-width:400px; margin:auto;}
- label{display:block; margin-top:15px; font-weight:bold;}
- input, textarea{width:100%; padding:10px; margin-top:5px; border:1px solid #ddd; border-radius:8px; box-sizing:border-box;}
- button{background:#ff4081; color:white; border:none; padding:12px; width:100%; margin-top:20px; border-radius:8px; font-size:16px;}
- table{width:100%; margin-top:20px; background:white; border-collapse:collapse;}
- th, td{padding:10px; border:1px solid #ddd; text-align:left;}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Vaseekaran</title>
+<link rel="stylesheet" href="contact.css">
 </head>
-
 <body>
 
-  <nav style="background:#111; padding:12px; display:flex; gap:12px; justify-content:center; position:sticky; top:0;">
-  <a href="portfolio.html" style="color:white; text-decoration:none;">Home</a>
-  <a href="flex.html" style="color:white; text-decoration:none;">Flex</a>
-  <a href="contact.html" style="color:#ff4081; font-weight:bold; text-decoration:none;">Contact</a>
-  <a href="Inx1.html" style="color:gray; text-decoration:none;">Old</a>
-  </nav>
+<nav>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html" class="active">Contact</a>
+</nav>
 
-  <h2>Contact me</h2>
+<div class="container">
+  <h1>Contact Me</h1>
+  <p>Let's work together!</p>
+  <br>
+
   <form>
+    <label>Name</label>
+    <input type="text" placeholder="Your Name" required>
 
-    <lable>Name :</lable>
-    <input type="text" placeholder="Name" required>
+    <label>Email</label>
+    <input type="email" placeholder="Your Email" required>
 
-    <label>Email :</label>
-    <input type="Email" placeholder="Email" required>
-    <label>message</label>
-    <textarea rows="4" placeholder="like your portpolio"></textarea>
-    <lable><input type="checkbox" style="width:auto;">i agree to terms</lable>  
- 
-  <button>send</button>
+    <label>Message</label>
+    <textarea rows="5" placeholder="Your message..." required></textarea>
+
+    <label><input type="checkbox" style="width:auto;"> Subscribe?</label>
+
+    <button type="submit">Send Message</button>
   </form>
+</div>
 
-  <h3 style="text-align:center;margin-top:30px;">My learnings</h3>
-
-  <table>
-
-    <tr><th>Day</th><th>What I learn</th><th>Status</th></tr>
-    <tr><td>oct 27</td><td>Html basic,Git push</td><td>Done</td></tr>
-    <tr><td>oct 28</td><td>Css,Flex box,portpolio</td><td>Done</td></tr>
-    <tr><td>oct 29</td><td>Forms & tables</td><td>doing</td></tr>
-    
-  </table>
-
-
-
-  
-  
 </body>
-
-
-  
 </html>
